@@ -35,7 +35,7 @@ var Sync = cli.Command{
 	Usage:  "keep syncing two end points",
 	Action: runSync,
 	Flags: []cli.Flag{
-		cli.StringFlag{Name: "mode, m", Value: "", Usage: "run mode"},
+		cli.&StringFlag{Name: "mode, m", Value: "", Usage: "run mode"},
 	},
 }
 
